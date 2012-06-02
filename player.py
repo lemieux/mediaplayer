@@ -94,9 +94,9 @@ class MediaPlayer:
                     song = self.prompt_file_chooser()
                     if song is not None:
                         self.play_file(song)
-                        self.prompt_menu()
                     else:
                         completed = False
+                    self.prompt_menu()
                 elif input == "b":
                     self.go_up()
                 elif input == "x":
